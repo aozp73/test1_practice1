@@ -3,7 +3,10 @@
     <%@ include file="../layout/header.jsp" %>
 
         <div class="align_center">
-            <h1>나의 게시글목록 페이지 체크</h1>
+            <h1>나의 게시글목록 페이지</h1>
+        </div>
+        <div class="align_center">
+            <%@ include file="../layout/nav.jsp" %>
         </div>
         <hr>
         <div class="align_center">
@@ -13,11 +16,13 @@
                     <th>제목</th>
                     <th>작성일</th>
                 </tr>
+                <c:forEach items="${boardList}" var="board">
                 <tr>
-                    <th>1</th>
-                    <th>스프링1강 정리</th>
-                    <th>2023-01-27</th>
+                    <th>${board.id}</th>
+                    <th>${board.title}</th>
+                    <th>${board.createdAt}</th>
                 </tr>
+                </c:forEach>
             </table>
         </div>
 

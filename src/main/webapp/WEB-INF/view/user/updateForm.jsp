@@ -5,11 +5,14 @@
         <div class="align_center">
             <h1>회원수정 페이지</h1>
         </div>
+        <div class="align_center">
+            <%@ include file="../layout/nav.jsp" %>   
+        </div>
         <hr>
         <div class="align_center">
-            <form action="/user/1/update" method="post">
-                <input type="password" name="password" value="1234" placeholder="Enter password" required><br>
-                <input type="email" name="email" value="ssar@nate.com" placeholder="Enter email" required><br>
+            <form action="/user/${user.id}/update" method="post">
+                <input type="password" name="password" value="${user.password}" placeholder="Enter password" required><br>
+                <input type="email" name="email" value="${user.email}" placeholder="Enter email" required><br>
                 <button type="submit">회원수정</button>
             </form>
         </div>

@@ -5,6 +5,9 @@
         <div class="align_center">
             <h1>로그인 페이지</h1>
         </div>
+        <div class="align_center">
+            <%@ include file="../layout/nav.jsp" %>   
+        </div>
         <hr>
         <div class="align_center">
             <form action="/login" method="post">

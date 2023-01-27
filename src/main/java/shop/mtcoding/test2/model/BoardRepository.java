@@ -11,6 +11,8 @@ public interface BoardRepository {
 
     public List<Board> findAll();
 
+    public List<Board> findByUserId(int userId);
+
     public Board findById(int id);
 
     public int updateById(@Param("id") String id, @Param("title") String title);
