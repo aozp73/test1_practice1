@@ -3,7 +3,7 @@
     <%@ include file="../layout/header.jsp" %>
 
         <div class="align_center">
-            <h1>나의 게시글목록 페이지</h1>
+            <h1>나의 게시글목록 페이지 체크</h1>
         </div>
         <hr>
         <div class="align_center">
